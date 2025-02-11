@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сюрприз с ёбаной макакой</title>
+    <style>
+        body {
+            background-color: #000; /* Черный фон */
+            color: #ffffff; /* Белый текст */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px; 
+            text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; 
+            animation: glowing 1.5s infinite alternate;
+        }
+
+        @keyframes glowing {
+            0% { text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #ff00ff; }
+            100% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #00bfff; }
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #555; /* Темная кнопка */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background-color: #777; /* Светлее при наведении */
+            box-shadow: 0 0 20px #00bfff, 0 0 30px #ff00ff; /* Светящийся эффект */
+        }
+
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>салам, хочешь ёбаную макаку?!</h1>
+    <button id="magicButton">Ебани по мне!</button>
+    
+    <script>
+        const button = document.getElementById('magicButton');
+
+        button.addEventListener('click', () => {
+            window.location.href = 'https://wallpapers.com/images/hd/chimpanzee-background-47e1j0qqq3l7lwym.jpg'; // Переход на изображение
+        });
+    </script>
+</body>
+</html>
+
